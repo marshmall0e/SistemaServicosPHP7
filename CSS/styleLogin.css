@@ -1,7 +1,50 @@
-
 body {
-    width: 100%;
-    height: 100%;
+    background: linear-gradient(to bottom, #1E90FF, #FFFF); /* Gradiente de branco para azul */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-    background-color: aqua;
+.tela-login {
+    width: 350px; /* Definindo uma largura fixa */
+    background-color: #1E90FF; /* Azul */
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #fff; /* Branco */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 150px; /* 100% da largura do contêiner */
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 20px; /* Arredondando um pouco menos */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    height: 30px;
+    width: 150px; /* Largura fixa para um botão menor */
+    margin: 20px auto; /* Centralizando com margem automática */
+    background-color: #fff; /* Branco */
+    border: none;
+    border-radius: 15px;
+    color: #000; /* Preto */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ddd; /* Cor ao passar o mouse */
 }
