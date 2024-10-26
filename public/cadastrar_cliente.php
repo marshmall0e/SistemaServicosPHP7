@@ -34,14 +34,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-    <form method="post">
-        Nome: <input type="text" name="nome" required>
-        Documento: <input type="text" name="documento" required>
-        Email: <input type="email" name="email" required>
-        <button type="submit">Cadastrar</button>
-    </form>
+    <header>
+        <h1>Cadastro de Cliente</h1>
+    </header>
+    <main>
+        <form method="post">
+            Nome: <input type="text" name="nome" required>
+            Documento: <input type="text" name="documento" required>
+            Email: <input type="email" name="email" required>
+            <button type="submit">Cadastrar</button>
 
-<a href="index.php"><button>Início</button></a>
+        </form>
+        <a href="index.php">Início</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sistema de Serviços. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
 

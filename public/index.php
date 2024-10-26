@@ -17,6 +17,14 @@ if (!isset($_SESSION['loggedin'])) {
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="shortcut icon" href="https://shownet.showtecnologia.com/shownet/newapp/media/img/favicon.png">
 </head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Sistema de Serviços</title>
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
 <body>
     <header>
         <h1>Bem-vindo ao Sistema de Serviços</h1>
@@ -33,10 +41,10 @@ if (!isset($_SESSION['loggedin'])) {
     </main>
 
     <footer>
-
+        <p>&copy; 2024 Sistema de Serviços. Todos os direitos reservados.</p>
     </footer>
-
-
 </body>
+</html>
+
 </html>
 
