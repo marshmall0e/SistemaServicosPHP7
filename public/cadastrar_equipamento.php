@@ -22,11 +22,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<form method="post">
-    Modelo: <input type="text" name="modelo" required>
-    Fabricante: <input type="text" name="fabricante" required>
-    Número de Série: <input type="text" name="numero_serie" required>
-    <button type="submit">Cadastrar</button>
-</form>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de equipamentos</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="shortcut icon" href="https://shownet.showtecnologia.com/shownet/newapp/media/img/favicon.png">
+</head>
+<body>
+    <form method="post">
+        Modelo: <input type="text" name="modelo" required>
+        Fabricante: <input type="text" name="fabricante" required>
+        Número de Série: <input type="text" name="numero_serie" required>
+        <button type="submit">Cadastrar</button>
 
-<a href="index.php">Início</a>
+        <a href="index.php">Início</a>
+    </form>
+</body>
+
+</html>

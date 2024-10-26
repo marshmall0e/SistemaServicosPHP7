@@ -25,6 +25,25 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 }
 
 echo "</table>";// Finaliza a tabela HTML
+
 ?>
 
-<a href="index.php">Início</a>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Ordens de Serviços</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="shortcut icon" href="https://shownet.showtecnologia.com/shownet/newapp/media/img/favicon.png">
+</head>
+
+<body>
+  
+  <footer> 
+     <a href="index.php">Início</a>
+  </footer>
+
+</body>
+</html>
+

@@ -23,11 +23,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<form method="post">
-    Nome: <input type="text" name="nome" required>
-    Documento: <input type="text" name="documento" required>
-    Email: <input type="email" name="email" required>
-    <button type="submit">Cadastrar</button>
-</form>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de clientes</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="shortcut icon" href="https://shownet.showtecnologia.com/shownet/newapp/media/img/favicon.png">
+</head>
+
+<body>
+    <form method="post">
+        Nome: <input type="text" name="nome" required>
+        Documento: <input type="text" name="documento" required>
+        Email: <input type="email" name="email" required>
+        <button type="submit">Cadastrar</button>
+    </form>
 
 <a href="index.php"><button>Início</button></a>
+</body>
+</html>
+

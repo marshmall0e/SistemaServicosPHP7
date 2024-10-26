@@ -4,17 +4,6 @@
 
 session_start();
 
-function cadastrarUsuarios($nome, $email, $senha) {
-    global $pdo;
-    // Hash da senha para segurança
-    $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
-    // Prepara a instrução SQL para inserir na tabela de usuários
-    $stmt = $pdo->prepare("INSERT INTO usuarios (nome, email, senha) VALUES (?, ?, ?)");
-    // Executa a instrução com os valores fornecidos
-    return $stmt->execute([$nome, $email, $senhaHash]);
-}
-
-
 // Função para cadastrar um cliente
 function cadastrarCliente($nome, $documento, $email) {
     global $pdo;

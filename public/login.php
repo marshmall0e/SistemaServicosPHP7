@@ -20,10 +20,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<form method="post">
-    Usuário: <input type="text" name="usuario" required>
-    Senha: <input type="password" name="senha" required>
-    <button type="submit">Login</button>
-</form>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/CSS/styleLogin.css">
+    <link rel="shortcut icon" href="https://shownet.showtecnologia.com/shownet/newapp/media/img/favicon.png">
+</head>
+<body>
+    <main>
+        <div class="tela-login">
+            <h1>Login</h1>
+            <form method="post">
+                <input type="text" placeholder="Login" name="usuario" required>
+                <br><br>
+                <input type="password" placeholder="Senha" name="senha" required>
+                <br><br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
 
-<a href="cadastrar_usuarios.php"><button>Criar Cadastro</button></a>
+
+
+
+

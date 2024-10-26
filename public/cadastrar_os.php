@@ -18,12 +18,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Ordem de Serviços</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="shortcut icon" href="https://shownet.showtecnologia.com/shownet/newapp/media/img/favicon.png">
+</head>
+<body>
+    <form method="post">
+        Cliente ID: <input type="number" name="cliente_id" required>
+        Equipamento ID: <input type="number" name="equipamento_id" required>
+        Status: <input type="text" name="status" required>
+        <button type="submit">Cadastrar Ordem de Serviço</button>
+    </form>
 
-<form method="post">
-    Cliente ID: <input type="number" name="cliente_id" required>
-    Equipamento ID: <input type="number" name="equipamento_id" required>
-    Status: <input type="text" name="status" required>
-    <button type="submit">Cadastrar Ordem de Serviço</button>
-</form>
-
-<a href="index.php">Início</a>
+    <a href="index.php">Início</a>
+</body>
+</html>
