@@ -2,14 +2,6 @@ CREATE DATABASE sistema_servicos;
 
 USE sistema_servicos;
 
-CREATE TABLE IF NOT EXISTS usuarios (
-    id INT AUTO_INCREMENT PRIMARY KEY,         -- ID do usuário, auto-incrementado
-    nome VARCHAR(255) NOT NULL,                -- Nome do usuário, não pode ser nulo
-    email VARCHAR(100) NOT NULL UNIQUE,        -- Email do usuário, não pode ser nulo e deve ser único
-    senha VARCHAR(255) NOT NULL,                -- Senha do usuário, não pode ser nulo
-    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Data de criação do registro, padrão para o horário atual
-);
-
 DESCRIBE usuarios;
 SELECT * FROM usuarios;
 
