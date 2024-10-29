@@ -1,52 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
-    background: linear-gradient(to bottom, #1E90FF, #FFFF); /* Gradiente de branco para azul */
-    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.main-login {
+    width: 100vw; 
+    height: 100vh;    
+    background-color: #EFF2F8;
+    display: flex;
+    flex-direction: row; /* Alinhamento padrão */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Para permitir que o conteúdo se ajuste em telas menores */
+}
+
+.left-login, img {
+    width: 100%;
+    flex: 1; /* Para garantir que ocupe espaço igual */
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 300px; /* Definido um tamanho mínimo */
+}
+
+.left-login > h1 {
+    color: #1C69AD;
+}
+
+.right-login {
+    flex: 1; /* Para garantir que ocupe espaço igual */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-width: 300px; /* Definido um tamanho mínimo */
+}
+
+.card-login {
+    width: 80%; /* Aumentado para ser mais responsivo */
+    max-width: 400px; /* Limitar largura máxima */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #1C69AD;
+    border-radius: 20px; /* Alterado para uma borda menos acentuada */
+    box-shadow: 0px 10px 40px rgba(76, 129, 176, 0.5); /* Sombra mais suave */
+}
+
+.card-login > h1 {
+    color: #b9d6f0;
+    font-weight: 700;
     margin: 0;
 }
 
-.tela-login {
-    width: 350px; /* Definindo uma largura fixa */
-    background-color: #1E90FF; /* Azul */
-    padding: 50px;
-    border-radius: 30px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    color: #fff; /* Branco */
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0; /* Ajustado para melhor espaçamento */
 }
 
-h1 {
-    margin-bottom: 20px;
-}
-
-input[type="text"],
-input[type="password"] {
-    width: 150px; /* 100% da largura do contêiner */
-    padding: 15px;
-    margin-bottom: 15px;
+.textfield > input {
+    width: 100%;
     border: none;
-    border-radius: 20px; /* Arredondando um pouco menos */
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 10px; /* Aumentado para conforto ao digitar */
+    background: #418fd3;
+    color: #c1d9ee;
+    font-size: 14pt; /* Aumentado para melhor legibilidade */
+    box-shadow: 0px 10px 40px rgba(185, 214, 240, 0.5); /* Sombra mais suave */
+    outline: none;
+    box-sizing: border-box;
 }
 
-button {
-    height: 30px;
-    width: 150px; /* Largura fixa para um botão menor */
-    margin: 20px auto; /* Centralizando com margem automática */
-    background-color: #fff; /* Branco */
+.textfield > label {
+    color: #c1d9ee;
+    margin-bottom: 5px;
+}
+
+.textfield > input::placeholder {
+    color: #b9d6f0;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0;
+    margin: 10px 0; /* Ajustado para melhor espaçamento */
     border: none;
-    border-radius: 15px;
-    color: #000; /* Preto */
-    font-weight: bold;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #b9d6f0;
+    background-color: #418fd3;
     cursor: pointer;
-    transition: background-color 0.3s;
+    box-shadow: 0px 10px 40px -12px rgba(65, 143, 211, 0.5); /* Sombra mais suave */
+    outline: none;
 }
 
-button:hover {
-    background-color: #ddd; /* Cor ao passar o mouse */
+@media (max-width: 768px) {
+    .left-login, .right-login {
+        width: 100%; /* Em telas pequenas, ocupam 100% da largura */
+        height: auto; /* Altura automática */
+    }
+    .card-login {
+        width: 90%; /* Mais responsivo */
+    }
 }
-
-

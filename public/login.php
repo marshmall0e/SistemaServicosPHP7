@@ -20,6 +20,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -32,21 +34,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-    <main>
-        <div class="tela-login">
-            <h1>Login</h1>
-            <form method="post">
-                <input type="text" placeholder="Login" name="usuario" required>
-                <br><br>
-                <input type="password" placeholder="Senha" name="senha" required>
-                <br><br>
-                <button type="submit">Login</button>
-            </form>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça login<br>E entre no sistema de serviços</h1>
+            <div class="img">
+            <img src="../CSS/chat-bot-animate.svg" alt="Robo animação">
+            </div>
         </div>
-    </main>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <form method="post">
+                    <div class="textfield">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" placeholder="Usuário" name="usuario" required>
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" placeholder="Senha" name="senha" required>
+                    </div>
+                    <button class="btn-login" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
+
 
 
 

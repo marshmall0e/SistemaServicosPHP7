@@ -1,55 +1,93 @@
-/* Estilo geral do corpo da página */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
-    background: linear-gradient(to bottom, #1E90FF, #1f78d0); /* Gradiente de branco para azul claro */
-    font-family: Arial, sans-serif; /* Fonte padrão */
-    margin: 0; /* Remove margem padrão */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #EFF2F8; /* Fundo da página */
     color: #333; /* Cor do texto */
 }
 
-/* Estilo do cabeçalho */
 header {
-    text-align: center; /* Centraliza o texto */
-    padding: 20px; /* Espaçamento interno */
-    background-color: #00aeff; /* Azul escuro */
-    color: white; /* Texto branco */
+    width: 100%;
+    background-color: #1C69AD; /* Cor do cabeçalho */
+    color: #b9d6f0; /* Cor do texto no cabeçalho */
+    padding: 20px;
+    text-align: center;
 }
 
-/* Estilo principal do conteúdo */
+h1 {
+    margin: 0; /* Remove margens do título */
+}
+
 main {
-    display: flex; /* Usando Flexbox para layout */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: calc(100vh - 140px); /* Altura total menos o cabeçalho e rodapé */
+    width: 100vw; 
+    height: 100vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
 }
 
-/* Estilo da navegação */
-nav.home {
-    display: flex; /* Usando Flexbox para layout */
-    flex-direction: column; /* Coluna para links */
-    align-items: center; /* Centraliza os links */
-}
-
-/* Estilo dos links da navegação */
-nav.home a {
-    text-decoration: none; /* Remove sublinhado */
-    background-color: #ffffff; /* Fundo branco dos links */
-    color: #ffffff; /* Texto preto */
-    padding: 15px 30px; /* Espaçamento interno */
-    margin: 10px 0; /* Espaçamento entre os links */
+.card {
+    width: 100%;
+    background-color: #fff; /* Cor de fundo das cartas */
     border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2); /* Sombra leve */
-    transition: background-color 0.3s; /* Transição suave */
+    box-shadow: 0px 4px 20px rgba(76, 129, 176, 0.2); /* Sombra das cartas */
+    width: 90%; /* Largura da carta */
+    max-width: 400px; /* Largura máxima */
+    margin: 15px; /* Margem entre cartas */
+    padding: 20px; /* Padding interno */
 }
 
-/* Efeito ao passar o mouse sobre os links */
-nav.home a:hover {
-    background-color: #ADD8E6; /* Azul claro ao passar o mouse */
+.card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Estilo do rodapé */
-footer {
+.card-title {
+    color: #1C69AD; /* Cor do título da carta */
+    font-weight: 600; /* Peso da fonte do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.card-text {
+    color: #666; /* Cor do texto da carta */
+    margin-bottom: 20px; /* Aumentado para maior espaçamento */
     text-align: center; /* Centraliza o texto */
-    padding: 10px; /* Espaçamento interno */
-    background-color: #1e26ff; /* Azul escuro */
-    color: white; /* Texto branco */
+}
+
+.btn {
+    background-color: #418fd3; /* Cor do botão */
+    color: #b9d6f0; /* Cor do texto do botão */
+    padding: 10px 15px; /* Diminuído o padding do botão */
+    border: none; /* Remove bordas do botão */
+    border-radius: 20px; /* Bordas arredondadas do botão */
+    cursor: pointer; /* Cursor pointer */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    font-weight: 700; /* Peso da fonte */
+    transition: background-color 0.3s; /* Transição para hover */
+    margin-bottom: 15px; /* Aumenta o espaçamento entre os botões */
+}
+
+.btn:hover {
+    background-color: #1C69AD; /* Cor do botão ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1C69AD; /* Cor do rodapé */
+    color: #b9d6f0; /* Cor do texto do rodapé */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 95%; /* Largura da carta em telas pequenas */
+    }
 }

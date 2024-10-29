@@ -8,15 +8,7 @@ if (!isset($_SESSION['loggedin'])) {
     exit; // Finaliza o script para garantir que nenhuma outra parte do código seja executada
 }
 ?>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Serviços</title>
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="shortcut icon" href="https://shownet.showtecnologia.com/shownet/newapp/media/img/favicon.png">
-</head>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -25,19 +17,46 @@ if (!isset($_SESSION['loggedin'])) {
     <title>Página Inicial - Sistema de Serviços</title>
     <link rel="stylesheet" href="../CSS/home.css">
 </head>
+
 <body>
+
     <header>
-        <h1>Bem-vindo ao Sistema de Serviços</h1>
+        <div class="home-page">
+            <h1>Bem-vindo ao Sistema de Serviços</h1>
+        </div>
     </header>
 
     <main>
-        <nav class="home">
-            <a href="cadastrar_cliente.php">Cadastrar Cliente</a>
-            <a href="cadastrar_equipamento.php">Cadastrar Equipamento</a>
-            <a href="cadastrar_os.php">Cadastrar Ordem de Serviço</a>
-            <a href="listar_os.php">Listar Ordens de Serviço</a>
-            <a href="logout.php">Sair</a>
-        </nav>
+        <div class="card text-center mb-3" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Cadastrar de Clientes</h5>
+            <p class="card-text">Clique aqui para cadastrar um novo cliente no sistema.</p>
+            <a href="cadastrar_cliente.php" class="btn btn-primary">Cadastrar</a>
+
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-equipamento">Cadastrar Equipamentos</h5>
+            <p class="card-text">Clique aqui para cadastrar um novo equipamento no sistema.</p>
+            <a href="cadastrar_equipamento.php" class="btn btn-primary">Cadastrar</a>
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title">Cadastrar Ordem de Serviço</h5>
+            <p class="card-text">Clique aqui para cadastrar uma ordem de serviço no sistema.</p>
+            <a href="cadastrar_os.php" class="btn btn-primary">Cadastrar</a>
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title">Listagem de Ordem de Serviço</h5>
+            <p class="card-text">Clique aqui para visualizar a lista de ordens de serviço dos equipamentos</p>
+            <a href="listar_os.php" class="btn btn-primary">Validar</a>
+
+        </div>
+        <div class="card-body">
+            <a href="logout.php" class="btn btn-primary">Sair</a>
+        </div>
+    </div>
     </main>
 
     <footer>
@@ -46,5 +65,4 @@ if (!isset($_SESSION['loggedin'])) {
 </body>
 </html>
 
-</html>
 
