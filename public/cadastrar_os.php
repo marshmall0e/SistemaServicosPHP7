@@ -24,17 +24,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Ordem de Serviços</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="../CSS/cadastrar_os.css">
     <link rel="shortcut icon" href="https://shownet.showtecnologia.com/shownet/newapp/media/img/favicon.png">
 </head>
 <body>
-    <form method="post">
-        Cliente ID: <input type="number" name="cliente_id" required>
-        Equipamento ID: <input type="number" name="equipamento_id" required>
-        Status: <input type="text" name="status" required>
-        <button type="submit">Cadastrar Ordem de Serviço</button>
-    </form>
 
-    <a href="index.php">Início</a>
+<body>
+    <main>
+        <div class="card-login">
+            <h1>Cadastro de O.S.</h1>
+            <form method="post">
+                <div class="textfield">
+                    <input type="number" placeholder="Cliente ID" name="cliente_id" required>
+                </div>
+                <div class="textfield">
+                    <input type="number" placeholder="ID/Série" name="equipamento_id" required>
+                </div>
+                <div class="textfield">
+                    <input type="text" placeholder="Status" name="status" required>
+                    <button type="submit" class="btn-login">Cadastrar O.S.</button>
+                </div>
+            </form>
+            <a href="index.php">Home</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sistema de Serviços. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>

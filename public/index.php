@@ -19,7 +19,6 @@ if (!isset($_SESSION['loggedin'])) {
 </head>
 
 <body>
-
     <header>
         <div class="home-page">
             <h1>Bem-vindo ao Sistema de Serviços</h1>
@@ -27,36 +26,33 @@ if (!isset($_SESSION['loggedin'])) {
     </header>
 
     <main>
-        <div class="card text-center mb-3" style="width: 18rem;">
-        <div class="card-body">
+        <div class="card">
             <h5 class="card-title">Cadastrar de Clientes</h5>
             <p class="card-text">Clique aqui para cadastrar um novo cliente no sistema.</p>
-            <a href="cadastrar_cliente.php" class="btn btn-primary">Cadastrar</a>
-
+            <a href="cadastrar_cliente.php" class="btn">Cadastrar</a>
         </div>
 
-        <div class="card-body">
-            <h5 class="card-equipamento">Cadastrar Equipamentos</h5>
+        <div class="card">
+            <h5 class="card-title">Cadastrar Equipamentos</h5>
             <p class="card-text">Clique aqui para cadastrar um novo equipamento no sistema.</p>
-            <a href="cadastrar_equipamento.php" class="btn btn-primary">Cadastrar</a>
+            <a href="cadastrar_equipamento.php" class="btn">Cadastrar</a>
         </div>
 
-        <div class="card-body">
+        <div class="card">
             <h5 class="card-title">Cadastrar Ordem de Serviço</h5>
             <p class="card-text">Clique aqui para cadastrar uma ordem de serviço no sistema.</p>
-            <a href="cadastrar_os.php" class="btn btn-primary">Cadastrar</a>
+            <a href="cadastrar_os.php" class="btn">Cadastrar</a>
         </div>
 
-        <div class="card-body">
+        <div class="card">
             <h5 class="card-title">Listagem de Ordem de Serviço</h5>
-            <p class="card-text">Clique aqui para visualizar a lista de ordens de serviço dos equipamentos</p>
-            <a href="listar_os.php" class="btn btn-primary">Validar</a>
+            <p class="card-text">Clique aqui para visualizar a lista de ordens de serviço dos equipamentos.</p>
+            <a href="listar_os.php" class="btn">Validar</a>
+        </div>
 
+        <div class="card">
+            <a href="logout.php" class="btn">Sair</a>
         </div>
-        <div class="card-body">
-            <a href="logout.php" class="btn btn-primary">Sair</a>
-        </div>
-    </div>
     </main>
 
     <footer>
