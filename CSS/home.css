@@ -3,88 +3,83 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #EFF2F8; /* Fundo da página */
-    color: #333; /* Cor do texto */
-}
-
-header {
-    width: 100%;
-    background-color: #1C69AD; /* Cor do cabeçalho */
-    color: #b9d6f0; /* Cor do texto no cabeçalho */
-    padding: 20px;
-    text-align: center;
+    background-color: #EFF2F8;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Para garantir que o footer fique na parte inferior */
 }
 
 h1 {
-    margin: 0; /* Remove margens do título */
+    text-align: center;
+    color:#b9d6f0;
+}
+
+header {
+    background-color: #1C69AD;
+    text-align: center;
+    padding: 10px;
 }
 
 main {
-    width: 100vw; 
-    height: 100vh;  
+    flex: 1; /* Faz o main ocupar o espaço restante */
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center; /* Centraliza os cards horizontalmente */
+    justify-content: center; /* Centraliza os cards verticalmente */
     padding: 20px;
 }
 
 .card {
-    width: 100%;
-    background-color: #fff; /* Cor de fundo das cartas */
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0px 4px 20px rgba(76, 129, 176, 0.2); /* Sombra das cartas */
-    width: 90%; /* Largura da carta */
-    max-width: 400px; /* Largura máxima */
-    margin: 15px; /* Margem entre cartas */
-    padding: 20px; /* Padding interno */
-}
-
-.card-body {
-    width: 100%;
+    width: 90%; /* Largura responsiva */
+    max-width: 400px; /* Limita a largura máxima do card */
+    padding: 20px;
+    margin: 10px 0; /* Espaçamento entre os cards */
+    background-color: #EFF2F8; /* Cor do card */
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(76, 129, 176, 0.5);
+    color: #b9d6f0; /* Cor do texto do card */
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card-title {
-    color: #1C69AD; /* Cor do título da carta */
-    font-weight: 600; /* Peso da fonte do título */
-    margin-bottom: 10px; /* Espaçamento abaixo do título */
-}
-
-.card-text {
-    color: #666; /* Cor do texto da carta */
-    margin-bottom: 20px; /* Aumentado para maior espaçamento */
+    flex-direction: column; /* Alinha conteúdo verticalmente */
+    align-items: center; /* Centraliza conteúdo dentro do card */
     text-align: center; /* Centraliza o texto */
 }
 
+.card-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 15px;
+}
+
 .btn {
-    background-color: #418fd3; /* Cor do botão */
-    color: #b9d6f0; /* Cor do texto do botão */
-    padding: 10px 15px; /* Diminuído o padding do botão */
-    border: none; /* Remove bordas do botão */
-    border-radius: 20px; /* Bordas arredondadas do botão */
-    cursor: pointer; /* Cursor pointer */
-    text-transform: uppercase; /* Texto em maiúsculas */
-    font-weight: 700; /* Peso da fonte */
-    transition: background-color 0.3s; /* Transição para hover */
-    margin-bottom: 15px; /* Aumenta o espaçamento entre os botões */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #418fd3;
+    color: #b9d6f0;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline do link */
+    box-shadow: 0px 10px 40px -12px rgba(65, 143, 211, 0.5);
+    transition: background-color 0.3s;
+    display: inline-block; /* Para garantir que o botão fique no tamanho correto */
 }
 
 .btn:hover {
-    background-color: #1C69AD; /* Cor do botão ao passar o mouse */
+    background-color: #316b98; /* Cor do botão ao passar o mouse */
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #1C69AD; /* Cor do rodapé */
-    color: #b9d6f0; /* Cor do texto do rodapé */
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    padding: 10px 0;
+    background-color: #1C69AD;
+    color: #b9d6f0;
 }
+
+
 
 @media (max-width: 768px) {
     .card {

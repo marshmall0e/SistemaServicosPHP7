@@ -29,24 +29,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de clientes</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="../CSS/cadastrar_cliente.css">
     <link rel="shortcut icon" href="https://shownet.showtecnologia.com/shownet/newapp/media/img/favicon.png">
 </head>
 
 <body>
-    <header>
-        <h1>Cadastro de Cliente</h1>
-    </header>
     <main>
-        <form method="post">
-            Nome: <input type="text" name="nome" required>
-            Documento: <input type="text" name="documento" required>
-            Email: <input type="email" name="email" required>
-            <button type="submit">Cadastrar</button>
-
-        </form>
-        <a href="index.php">Início</a>
+        <div class="card-login">
+            <h1>Cadastro de Cliente</h1>
+            <form method="post">
+                <div class="textfield">
+                    <input type="text" placeholder="Nome" name="nome" required>
+                </div>
+                <div class="textfield">
+                   <input type="text" placeholder="Documento" name="documento" required>
+                </div>
+                <div class="textfield">
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+                <button type="submit" class="btn-login">Cadastrar</button>
+            </form>
+            <a href="index.php">Home</a>
+        </div>
     </main>
+
     <footer>
         <p>&copy; 2024 Sistema de Serviços. Todos os direitos reservados.</p>
     </footer>
