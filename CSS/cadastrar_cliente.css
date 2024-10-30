@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
@@ -54,7 +54,8 @@ main {
 }
 
 .textfield > input::placeholder {
-    color: #b9d6f0;
+    color: #c1d9ee;
+    margin-bottom: 5px;
 }
 
 .btn-login {
@@ -103,7 +104,7 @@ footer {
         width: 95%; /* Mais responsivo em telas pequenas */
     }
 }
-=======
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
@@ -149,11 +150,11 @@ main {
     width: 100%;
     border: none;
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px; /* Aumentado para conforto ao digitar */
     background: #418fd3;
     color: #c1d9ee;
-    font-size: 14pt;
-    box-shadow: 0px 10px 40px rgba(185, 214, 240, 0.5);
+    font-size: 14pt; /* Aumentado para melhor legibilidade */
+    box-shadow: 0px 10px 40px rgba(185, 214, 240, 0.5); /* Sombra mais suave */
     outline: none;
     box-sizing: border-box;
 }
@@ -208,4 +209,4 @@ footer {
         width: 95%; /* Mais responsivo em telas pequenas */
     }
 }
->>>>>>> 8e5d7a628e4eb76d111f91e1e98246232bc01760
+

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 
 // Inclui o arquivo de configuração que contém informações como a conexão com o banco de dados
@@ -61,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </body>
 </html>
 
-=======
+
 <?php
 
 // Inclui o arquivo de configuração que contém informações como a conexão com o banco de dados

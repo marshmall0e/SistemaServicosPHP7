@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <?php
 include '../includes/config.php';
 include '../includes/functions.php';
@@ -18,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Erro ao cadastrar Ordem de Serviço.";
     }
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -56,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 </body>
 </html>
-=======
+
 <?php
 include '../includes/config.php';
 include '../includes/functions.php';
