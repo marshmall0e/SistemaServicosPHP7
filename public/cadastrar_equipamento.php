@@ -17,9 +17,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Chama a função cadastrarEquipamento
         if (cadastrarEquipamento($modelo, $fabricante, $numero_serie)) {
-            echo "Equipamento cadastrado com sucesso!";
+            echo "<script>alert('Equipamento cadastrado com sucesso!');</script>";
         } else {
-            echo "Erro ao cadastrar equipamento.";
+            echo "<script>alert('Erro ao cadastrar equipamento!');</script>";
         }
     } 
 }

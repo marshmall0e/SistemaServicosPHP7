@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Location: index.php');// Redireciona o usuário para a página inicial (index.php)
         exit;// Encerra o script para garantir que nada mais seja executado
     } else {
-        echo "Usuário ou senha incorretos.";
+        echo "<script>alert('Usuário ou Senha incorretos! ');</script>";
     }
 }
 ?>

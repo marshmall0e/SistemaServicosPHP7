@@ -6,6 +6,8 @@ include '../includes/config.php';
 // Inclui o arquivo com funções que contêm a lógica de cadastro de cliente
 include '../includes/functions.php';
 
+
+
 // Verifica se o método da requisição é POST (significa que o formulário foi enviado)
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
@@ -16,9 +18,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Chama a função cadastrarCliente e verifica se foi bem-sucedida
     if (cadastrarCliente($nome, $documento, $email)) {
-        echo "Cliente cadastrado com sucesso!";
+        echo "<script>alert('Cliente cadastrado com sucesso!');</script>";
     } else {
-        echo "Erro ao cadastrar cliente.";
+        echo "<script>alert('Erro ao cadastrar cliente!');</script>";
     }
 }
 ?>

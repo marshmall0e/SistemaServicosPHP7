@@ -13,9 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Chama a função cadastrarOrdemServico e verifica se foi bem-sucedida
     if (cadastrarOrdemServico($cliente_id, $equipamento_id, $status)) {
-        echo "Ordem de Serviço cadastrada com sucesso!";
+        echo "<script>alert('Ordem de serviço cadastrada com sucesso!');</script>";
     } else {
-        echo "Erro ao cadastrar Ordem de Serviço.";
+        echo "<script>alert('Erro ao cadastrar Ordem de Serviço');</script>";
     }
 }
 
