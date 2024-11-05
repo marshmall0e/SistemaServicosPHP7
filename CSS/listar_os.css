@@ -48,7 +48,7 @@ table th, table td {
 
 table th {
     background-color: #1C69AD;
-    color: white;
+    color: #b9d6f0;
     font-weight: bold;
 }
 
@@ -66,7 +66,7 @@ table tr:hover {
 
 table td:first-child {
     font-weight: bold;
-    color: #1C69AD;
+    color: #b9d6f0;
 }
 
 /* Botão "Sair" */
@@ -76,7 +76,7 @@ table td:first-child {
     margin: 20px auto 0;
     text-align: center;
     background-color: #1C69AD; /* Cor do botão "Sair" */
-    color: white;
+    color: #b9d6f0;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
@@ -85,8 +85,7 @@ table td:first-child {
 }
 
 .btn-sair:hover {
-    background-color: #316b98; /* Cor ao passar o mouse */
-    transform: scale(1.05);
+    background-color: #418fd3; /* Cor ao passar o mouse */
 }
 
 /* Responsividade */
